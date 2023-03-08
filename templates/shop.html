@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <title>Demo - Shop</title>
+</head>
+<body>
+
+    <header id="header" class="isolate bg-white"></header>
+
+    <main class="container mx-auto">
+        <section id="all-products" class="mx-auto max-w-2xl py-8 px-4 mb-24 sm:px-6 lg:max-w-7xl lg:px-8"></section>
+    </main>
+
+    <footer id="footer"></footer>
+    <div id="modal" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true"></div>
+
+    <script src="../utils.js"></script>
+    <script>
+
+        const allProducts = document.getElementById('all-products');
+        allProducts.innerHTML = sectionContent('flex-col', generateProducts('all-products', 20, generateTitle('All Products')));
+
+    </script>
+
+</body>
+</html>

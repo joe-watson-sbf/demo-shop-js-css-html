@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <title>Demo - Collections</title>
+</head>
+
+<body>
+
+    <header id="header" class="isolate bg-white"></header>
+
+    <main class="container mx-auto m-h-[90vh] max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+            
+            <h2 class="text-4xl font-semibold text-gray-900">Collections</h2>
+
+            <div id="categories" class="grid grid-cols-1 gap-y-10 gap-x-6 
+            sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"> 
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="footer"></footer>
+
+    <script src="../utils.js"></script>
+
+    <script>
+        generateCategoryCard();
+        const element = document.getElementById('categories');
+        
+        generateCategoryCard().then((data) => {
+            element.innerHTML = data;
+        });
+
+    </script>
+
+</body>
+
+</html>
