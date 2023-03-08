@@ -220,10 +220,6 @@ function generateHeaderComponent() {
         {
             name: 'Contact us',
             link: 'templates/contact.html'
-        },
-        {
-            name: '',
-            link: ''
         }
     ]
 
@@ -253,7 +249,7 @@ function generateHeaderComponent() {
         <div class="px-6 py-6 lg:px-8">
             <nav class="flex items-center justify-between" aria-label="Global">
                 <div class="flex lg:flex-1">
-                    <a href="/" class="-m-1.5 p-1.5">
+                    <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Stop & Shop</span>
                         <img class="h-12"
                             src="https://logos-download.com/wp-content/uploads/2016/05/Stop__Shop_logo_logotype.png"
