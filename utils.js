@@ -201,7 +201,7 @@ function generateHeaderComponent() {
     const navLinks = [
         {
             name: 'Home',
-            link: '/',
+            link: '/demo-shop-js-css-html/',
         },
         {
             name: 'Shop',
@@ -229,7 +229,7 @@ function generateHeaderComponent() {
 
 
         const path = window.location.pathname;
-        if (path === '/') return link;
+        if (path === '/' || path==="demo-shop-js-css-html/") return link;
         if (path.includes("templates/")) return link.replace("templates/", "");
         return link;
     }
