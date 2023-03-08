@@ -198,10 +198,13 @@ const fetProductById = async (id) => {
 
 
 function generateHeaderComponent() {
+    
+    const baseLink= window.location.pathname.split("/templates")[0];
+
     const navLinks = [
         {
             name: 'Home',
-            link: '/demo-shop-js-css-html/',
+            link: baseLink,
         },
         {
             name: 'Shop',
@@ -229,7 +232,7 @@ function generateHeaderComponent() {
 
 
         const path = window.location.pathname;
-        if (path === '/' || path==="demo-shop-js-css-html/") return link;
+        if (path === '/') return link;
         if (path.includes("templates/")) return link.replace("templates/", "");
         return link;
     }
