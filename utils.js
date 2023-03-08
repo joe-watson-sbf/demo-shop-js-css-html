@@ -342,8 +342,8 @@ function generateHeaderComponent() {
 
 function generateFooterComponent() {
     const links = [
-        { name: 'Shop', href: '/templates/shop.html' },
-        { name: 'About', href: '/templates/about.html' },
+        { name: 'Shop', href: '#' },
+        { name: 'About', href: '#' },
         { name: 'Privacy', href: '#' },
         { name: 'Terms', href: '#' },
         { name: 'Account', href: '#' },
