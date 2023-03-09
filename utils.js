@@ -161,9 +161,7 @@ async function fetchApi(key = "products", quantiy = 21) {
 
     const response = await fetch(baseUrl + key);
     const data = await response.json();
-    let items = data.slice(1, 21);
-    localStorage.setItem(key, JSON.stringify(items));
-    return items.slice(0, quantiy);
+    return data.slice(0, quantiy);
 
 }
 
